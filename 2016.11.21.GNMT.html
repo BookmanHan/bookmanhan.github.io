@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>2016.11.21.GNMT</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<p><script src="jquery-3.1.1.min.js"></script></p>
+<div id="header">
+*header...*
+</div>
+<script>
+$.get({
+  url: "header.html",
+  success: function( result ) {
+    $("#header").html($($.parseXML(result)).children("html").children("body").html());
+  }
+});
+</script>
+<h1>关于谷歌神经机器翻译系统架构</h1>
+<h3>作者：肖寒</h3>
+<h2>基本内容</h2>
+<p>博客文章（英文）：<a href="http://geek.csdn.net/news/detail/124262">http://geek.csdn.net/news/detail/124262</a><br />
+博客文章（中文）：<a href="http://www.dlworld.cn/YuYiLiJie/1949.html">http://www.dlworld.cn/YuYiLiJie/1949.html</a></p>
+<p>V1 ~ V6 分别是六个主要版本，依次递进。  其中，V4 是编解码阵列形式（Encoder-Decoder Array）, 我们很少见，基本上也跑不动。V5 是针对上面跑不动做出的并行化，也就是实践版本。值得注意的是 V6，<strong>因为深层网络会损失信息，所以 GNMT 使用了余量网络的设计技巧</strong>。  输入和每一阶段的输出，一直被带着往前走。</p>
+<p><center></p>
+<img src="2016.11.21_1.png" width="65%" />
+<p></center></p>
+<p>最后是整个模型:</p>
+<p><center></p>
+<img src="2016.11.21_2.png" width="65%"/>
+<p></center></p>
+<h2>基于存储网络改善余量网络</h2>
+<p>问题：上述设计中，作者希望对深层次网络进行学习，使用了余量网络，保持了输入到每个层次的距离。 但是这种设计，实际上很不精巧，而且容易引入层之间的信息混淆。</p>
+<p><strong>所以我提出利用动态记忆网络(Dynamic Memory Network)来替代余量网络解决这个问题</strong>。</p>
+<p>方法：将每一层的输出不清楚地放入存储中，然后每一层的输入就是从存储中读出。注意，平凡的情况下，记忆网络读出内容为平均，也就是这里的残差网络。所以，残差网络实际上是一个记忆网络的平凡特例。</p>
+<h2>关于采样加速神经网络训练的思考</h2>
+<p>这里有一篇介绍采样方法的博文：<a href="http://www.cnblogs.com/daniel-D/p/3388724.html">http://www.cnblogs.com/daniel-D/p/3388724.html</a></p>
+<p>初步思考：人家训练 1000 万样本，实际上有效数据可能也就是 100 万样本。那我们如果能有效采样出 100 万重要样本不就是 x10 的加速么？那么怎么样采样出有效子数据集呢？通过采样方法（Sampling）就是一种途径。</p>
+<p><strong>动机</strong>：Efficient Training with Sampled Sub-Datasets. <br />
+<strong>原有问题</strong>：网络结构巨大，难以训练；数据样本的重要程度不同。有些样本可能有很多相似的副本（Multiple approximated samples could hardly be distinguished as independent instances）。 <br />
+<strong>问题原因</strong>：数据分布并不均匀的，而是长尾分布的；大量平常数据浪费了资源。 <br />
+<strong>解决办法</strong>：使用拒绝采样的方法（RS），来有效选取当前训练数据子集，在尽可能少的精度损失下，达到尽可能好的效果。<br />
+<strong>贡献</strong>：网络训练加速，提高复杂网络实际应对大规模数据(large-scale data)的可行性。   </p>
+<div id="footer">
+*footer...*
+</div>
+<script>
+$.get({
+  url: "footer.html",
+  success: function( result ) {
+    $("#footer").html($($.parseXML(result)).children("html").children("body").html());
+  }
+});
+</script>
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->

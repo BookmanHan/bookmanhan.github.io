@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>2016.10.19.b</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<p><script src="jquery-3.1.1.min.js"></script></p>
+<div id="header">
+*header...*
+</div>
+<script>
+$.get({
+  url: "header.html",
+  success: function( result ) {
+    $("#header").html($($.parseXML(result)).children("html").children("body").html());
+  }
+});
+</script>
+<h1>关于黄老师推荐的两篇论文</h1>
+<h3>作者：肖寒</h3>
+<p>两篇论文的地址为：</p>
+<ul>
+<li><a href="https://arxiv.org/pdf/1505.05424v2.pdf">https://arxiv.org/pdf/1505.05424v2.pdf</a></li>
+<li><a href="https://arxiv.org/abs/1608.05081">https://arxiv.org/abs/1608.05081</a></li>
+</ul>
+<h2>关于第一篇</h2>
+<p>就是这篇 Weight Uncertainty in Neural Networks？
+我没太细读，但是一眼望过去，这基本上没有任何内容。</p>
+<p>这篇论文要做什么：给神经网络权值加个限制，这限制你叫他正则、约束先验、约束后验都差不多，因为他们在贝叶斯定理下相互转换。
+那本文怎么做的呢？</p>
+<p>一般的神经网络的目标，可以写为高斯分布，就是那种平方形式，我在这上面对权值加个先验，乘上去就行啦，这就是第二节的全部内容。</p>
+<p>不得不说，这个第三节，真是厉害了，全都是书上最基本的常识，居然也能中论文！目瞪口呆。</p>
+<p>先来看第三节开头到 3.1 这段，这是啥？这是 Beth 自由能推导，任何一本概率图论的书都讲。
+再来看 3.1 中的命题 1，一个大一学生都能秒推的命题，却是全文少有的新鲜内容。
+公式（2）就是刚才推导出来的 Beth 自由能，Beth 自由能就是新的网络目标。
+只不过 Beth 自由能要求是 q 的期望，他这里实际计算按照 q 来采样，就是一个意思。</p>
+<p>知道这些，3.2 节就显得有些幼稚。我们直接看算法就好。</p>
+<ul>
+<li>
+第 1~2 步：
+<ul>
+<li>刚才我们不是说要从 q 里面采样么？这一步就干这个的。</li>
+<li>注意 log(1+exp(p)) 居然只是为了保持一个正数才这么写，实际上，你写成 p * e 也没问题，但此时就必须限制 p 为正的。</li>
+<li>而本文利用那个 log(1+exp(p)) 公式，p 就没有范围要求。</li>
+<li>他从 q 这个高斯中采样，那我们怎么采样？先来一个已知的均值 \mu，再采一个偏差，第 2 步后面的一堆就是那个偏差。</li>
+<li>之所以要保持 e 之前的为正，就是因为 e 之前的部分对应了高斯分布的那个标准差，标准差必须是正的。</li>
+</ul>
+</li>
+<li>第 3 步：这是啥？这是定义，你也写到算法里？</li>
+<li>第 4 步：这又是啥？这不是刚才的目标么？我知道你内容少，但你至于再次强调么？</li>
+<li>第 5~6 步：根据命题 1，推导初始梯度就行，就是命题 1 的代入。</li>
+<li>第 7 步：网络的初始梯度求出来了，之后就是一般的 BP 了。</li>
+</ul>
+<p>完事，本文的算法完事了。</p>
+<h5>哎呀，不行，这篇幅太短。</h5>
+<p>于是，作者说，这样吧，咱们也别就从高斯中采样，也可以尝试从混合高斯中采样。
+先采出来一个成分（通过 \pi），然后再根据成分是高斯的，按照上面算法的第 1~2 步采样，算法其他部分不变。
+嗯，我还可以换成各种共轭分布呢，这一小节可以说彻底是毫无意义，就是凑字数。</p>
+<h5>然而， 篇幅还是不够呀。</h5>
+<p>于是有了 3.4 节，描述了一个 mini-batch 的 Trick，免得大家复现不出来，真是体贴呀。</p>
+<p>到这里，我都忍了，毕竟还有公式，勉强为美国人民的数学点赞吧。
+但是第四节，你要我怎么说？
+这百分百就是上下文老虎机的基本内容，真的是字面意义的毫无新意！</p>
+<p>我们来看第四节的第一个算法，这是所有老虎机的通用框架，作者，你在开玩笑么？
+要写也得写到 Related Work 里面！</p>
+<p>我们再来看第四节的第二个算法，这个是上下文老虎机的通用框架，作者，我已经习惯了。</p>
+<ul>
+<li>上下文老虎机的要点基本是在第 3 步，也就是基本上全部的研究都集中在第 3 步，怎么选最好，才能探索利用折中（Exploit-Exploration Trade-Off）</li>
+<li>最基本的方法叫 （\alpha,\fai）-Bandit，就是利用中心化不等式，强制预估每个行动的回报范围，从而利用乐观原则的一些方法进行优化。</li>
+<li>简单说，您记得学姐举得例子么？如果我们刚开始一直选择状态 1，不去尝试其他状态，就得不到最好的收获。</li>
+<li>上下文老虎机的核心，就是在试图避免这个问题，让我们如何可以脱离状态 1，去尝试其他状态。</li>
+</ul>
+<p>然而，作者并没有对其作出任何的贡献，随便用他的神经网络参数化了一下那个期望的分布。
+怎么说呢，这么写 Context 也不是没有道理，但毫无新意。</p>
+<p>实验部分就不讨论了。</p>
+<h3>我们的改进：神经网络权值的多样性。</h3>
+<p>比如 CNN，如果卷积核都是一样的，那基本上没有什么意思。
+所以，我们希望可以加入权值多样性的先验，来促使网络捕捉到更多的信息。
+多样性先验，有完美理论的是行列式点过程（DPP），难用，推导复杂，我喜欢，但写了评审也看不懂。
+咱就用最简单的，最朴素的，內积互斥。对，比如两个卷积核拉长成向量 a 和 b， 我们最小化 |&lt;a,b&gt;|，就行。</p>
+<h2>关于第二篇</h2>
+<p>然而，这最厉害的还是第二篇：Efficient Exploration for Dialogue Policy Learning with BBQ Networks &amp; Replay Buffer Spiking.这篇论文实在是令人瞠目结舌。</p>
+<p>我知道 NIPS 一贯不爱 Related Work，但是作者，你这第 2~3 节全是相关工作，一点建树都没有，你在干什么。
+这个第 4 节就是刚才那篇论文，整个前四页啥也没说。
+来，关键的第五节开始了，作者的核心贡献，就是把第 3 节和第 4 节排列组合到一起，然后生硬地用到了第 2 节的任务上。
+真是完美的一篇水文。</p>
+<p>实验先略去，但是不行，这简直都没法活了。
+看 6.1，作者才训练 2 遍（2-epochs）！
+神经网络你训练 2 遍根本展不开，对 DQN 严重不公平。
+那你说，DDQN（本文方法）也是训练 2 遍，但你加先验了。
+你这不就是趁着自己先验调的好，不用怎么训练就能完活么，胜之不武呀。</p>
+<p>如果对 DQN 充分训练，它的效果会这么惨么？
+来看看能把你气死的表 1，作者，你确定你这么写不害臊么？</p>
+<p>到现在为止，我并不震惊，因为 NIPS 和 ICML 上水文也不少。
+所以，我才是选择看的，所谓论文选集，这些一目了然的论文也没必要读呀。
+但相信我，这两个会上的平均水平，是 ACL 这种不能比的。</p>
+<p>然而，此时，我不能再镇定了，因为作者给出了 Related Work。
+那你的前四节都是什么呢？
+这相关工作真的是一点都不相关，完全就是在科普拖延篇幅。</p>
+<p>八页并没写满。
+这要是还中了，我只能说，吃枣药丸。</p>
+<p>我觉得，咱们别看这些论文中了，咱们也要发和这篇类似的。
+这些论文的作者指不定和主席、评审有什么关系呢。
+因为，水成这样还是命中，我觉得很奇怪。
+咱们没那么便利，就踏实地工作，写一些正常水平的文章，不跟风写这些人家能中咱不行的论文。</p>
+<h2>读后感</h2>
+<div id="footer">
+*footer...*
+</div>
+<script>
+$.get({
+  url: "footer.html",
+  success: function( result ) {
+    $("#footer").html($($.parseXML(result)).children("html").children("body").html());
+  }
+});
+</script>
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->

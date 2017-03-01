@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>2016.11.23</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<p><script src="jquery-3.1.1.min.js"></script></p>
+<div id="header">
+*header...*
+</div>
+<script>
+$.get({
+  url: "header.html",
+  success: function( result ) {
+    $("#header").html($($.parseXML(result)).children("html").children("body").html());
+  }
+});
+</script>
+<h1>阿里对话语料数据分析报告</h1>
+<h4>作者：肖寒</h4>
+<h3>可获利客服系统的研究</h3>
+<h4>背景</h4>
+<p>问答现在随着小冰和 Siri 等商业化系统正如日中天，ChatBot 已然是资本新宠，然而这些技术关注的要点主要是信息获取，所以现有方法更看重「准确性」。 阿里小蜜功能上来说，也是一个问答系统，具体说是一个电商的客服问答。<strong>电商的信息往往在商品页面已经完好的提供了，所以用户在进行客服时，往往具有一些言语之外的期待。</strong></p>
+<p><strong>下面是一个典型的例子。</strong>一款手机的续航是无法更改的，但用户执意要对此进行抱怨，实际上，是心中对估价和期待有所失衡。<strong>此时，回答标准的续航相关事实无济于事，反而显得文不对题；只有有效地安抚用户，巧妙地解决心结，才能提高满意度和改善购买意向。</strong>前者对应了「精确性」客服问答，是现有的主流方法；后者对应了「可获利」客服问答，是我们提出的新课题。</p>
+<p><strong>所谓「可获利」问答系统，指的是以解决客户的潜在语义中的不满，来提高交易成交率的问答方法论。</strong>对比与闲聊系统和检索问答系统中「精确性」来说，我们认为在线商务网站的客服问答系统，「可获利」才是关键。<strong>不是要回答出标准事实，而是要回答出满意答案。</strong></p>
+<p><center></p>
+<table style="font-size:0.9em; background:#EFEFEF;" width="85%"><tr>
+<td width="50%" style="vertical-align:top;">
+<div style="border-bottom:1px #DEDEDE solid; padding-bottom:4px; margin-bottom:4px; font-size:1.08em; text-align:center">
+	「精确性」客服问答
+</div>
+用户：你们家的手机的续航是不是太短了。 <br/>
+客服：您好，这款手机的电池是标准的 5000 mA。
+</td>
+<td width="50%" style="vertical-align:top;">
+<div style="border-bottom:1px #DEDEDE solid; padding-bottom:4px; margin-bottom:4px; font-size:1.08em; text-align:center">
+	「可获利」客服问答
+</div>
+用户：你们家的手机的续航是不是太短了。 <br/>
+客服：您好，我们可以送您一个 10000 mA 的小巧充电宝，方便携带。
+</td>
+</tr></table>
+<div style="font-size:0.9em;">
+图 1：左侧是传统的精确性问答，主要是针对类似信息检索系统；<br/>右侧是我们提出的可获利问答，主要针对电商客服。
+</div>
+<p></center></p>
+<h4>问题</h4>
+<p>「精确性」客服问答的核心在于问题理解和事实检索，而「可获利」客服问答的核心在于语义理解和数据建模。<strong>相比之下，「可获利」需要更深一层的理解用户的语义和对话的语境。</strong>传统方法可以是半人工式的，甚至是完全模板化的；但「可获利」很难利用简单的逻辑形式化，所以必须是数据驱动的。<strong>过量的人工投入对解决可获利问题并没有实质帮助，问题解决的核心，是从海量数据中学习「客服技巧」。</strong></p>
+<p>参考图 1，我们不难发现左右两图的客服，显然从业经验有所差别；左侧的服务在可获利意义上，要弱于右侧的服务。<strong>我们把这种从业经验概括为「客服技巧」，这就是我们要从海量数据中着重建模的目标。</strong>「客服技巧」的刻画，可以极大的补充现有网商客服问答能力。然而此时，如何度量「客服技巧」，实际上成了一个很关键问题。  </p>
+<ul>
+<li>对于学习，检测出有「客服技巧」的对话(Session)才能有效地学习。</li>
+<li>对于建模，只有理解「客服技巧」的数据表现才能构造出有效模型。</li>
+<li>对于测试，只有明确「客服技巧」的度量，我们才能更好地评价模型和系统。</li>
+</ul>
+<h4>关于客户技巧的刻画</h4>
+<p>我们通过对现有数据集的分析，总结出三点「客服技巧」的数据表现：</p>
+<ol>
+<li>
+<strong>对话轮次</strong>
+<ul>
+<li><strong>观测：一段「客服技巧」很高的对话，对话轮次较短</strong>。</li>
+<li>解释：优秀的客服，往往可以直达客户所需，对症下药；平凡的客服，往往不能深刻理解客户，或者不知道如何处理情况，产生无意义的对话轮次。<strong>减少对话轮次，就是减少对用户耐心的损耗，是「可获利」的有利保证。</strong></li>
+</ul>
+</li>
+<li>
+<strong>成交率</strong>
+<ul>
+<li><strong>观测：一段「客服技巧」很高的对话，成交的概率会远大于一般对话。</strong></li>
+<li>解释：「客服技巧」解决了用户的不满，平衡了用户的心理，自然会提高成交率。<strong>同时提高成交率直接服务于利益，是「可获利」的直接保证。</strong></li>
+<li>度量：用户对话的最后，往往会有表示成交与否的轮次，在此轮次中出现诸如“成交”，“已经拍了”字样；<strong>通过这些关键词的学习和匹配，我们可以相对准确和容易地分析出这段对话是否成交。</strong>进而，获得每一次对话“成交期望”，衡量每一位客服的“成交率”。</li>
+<li><strong>注释：对「客服技巧」的精确建模，甚至可以估计正在进行对话中，随着对话进行，用户可能成交的概率变化趋势。</strong></li>
+</ul>
+</li>
+<li>
+<strong>售后满意度</strong>
+<ul>
+<li><strong>观测：一段「客服技巧」很高的对话，往往可以将质量不够硬商品的售后退换减小。</strong></li>
+<li>解释：质量不够硬的商品，很多时候，会使得用户处于可以退换，也可以将就的境遇。如果客服处理得当，退换率就会降低。<strong>退换率降低，是「可获利」的直接保证。</strong></li>
+<li>度量：<strong>同“成交率”类似，通过学习和匹配对话中相关字样</strong>，诸如退换货地址，运单编号等，分析出售后问题是否可以不通过退换货解决。</li>
+</ul>
+</li>
+</ol>
+<h4>方法</h4>
+<p>基于此，我们提出了我们的方法 <strong><em>ERTA (Elite Response Transferable Analysis)</em></strong>，有两个主要结构：</p>
+<ol>
+<li><strong>对话客服技巧的评估：通过我们对客服技巧的度量，在具有不满情绪的对话集合中，构建一套以种子对话为基础的半监督学习框架，从而评估整个语料的客服技巧。</strong>利用对话技巧的刻画指标和简单的阈值，先标记具有对话技巧的种子，然后再通过这段对话的客服相关、这段对话的商品相关、这段对话的用户相关，分别链接起两段对话，利用基于图传播(Graph Propergation)等半监督技术来估计每一个对话的客服技巧程度。</li>
+<li><strong>利用客服技巧评估作为注意力完善生成模型</strong>：利用端到端(Seq2Seq)来进行对话的生成模型，结合每句话的客服技巧程度，进行训练和回答。</li>
+</ol>
+<h4>实验</h4>
+<p>我们的实验主要是在阿里公式旗下淘宝网站的实际客服数据上进行的，数据经过匿名处理，会开出来做学术用途，这是我们的一大贡献。我们的基线算法，采用了当前的标杆方法:基于检索匹配的方法和Seq2Seq。<strong>至于性能测试，我们雇佣了 10 个人来进行 40 次针对性模拟测试，统计主观指标：对话满意度；客观指标：对话轮次、成交率和售后满意度。</strong>不出所料，ERTA 击败了所有的其他方法，表明了我们的有效性。</p>
+<h4>贡献</h4>
+<p>下面列出我们的贡献：</p>
+<ol>
+<li>我们提出了区别于传统「精确性」客服问答的<strong>「可获利」客服问答</strong>，强调了可获利性在商业系统中的重要性。 <strong>并同时给出了可获利性的定义和刻画指标</strong>。</li>
+<li>我们提出了一套基于半监督注意力机制的端到端生成式方法，区别于大数据中的样本平等的学习方式，我们的方法<strong>适合于大数据中关键数据的学习</strong>。</li>
+</ol>
+<div id="footer">
+*footer...*
+</div>
+<script>
+$.get({
+  url: "footer.html",
+  success: function( result ) {
+    $("#footer").html($($.parseXML(result)).children("html").children("body").html());
+  }
+});
+</script>
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->

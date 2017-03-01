@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>2016.11.08.bookman</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<p><script src="jquery-3.1.1.min.js"></script></p>
+<div id="header">
+*header...*
+</div>
+<script>
+$.get({
+  url: "header.html",
+  success: function( result ) {
+    $("#header").html($($.parseXML(result)).children("html").children("body").html());
+  }
+});
+</script>
+<h1>关于 Relation Extraction 中文本链信息的利用</h1>
+<p>作者：肖寒</p>
+<h2>分析流程</h2>
+<h3>关于熵正则</h3>
+<p>如果一句话是 Has-Part 关系，那么他就不可能是 Profession 关系，关系之间的互斥很强，这个地方应该加入稀疏性。
+所以，我们应该建立一个对每句话对整个关系的概型 [Z \in R | X \in Doc] 这样，对这个概型建模。 我们由于动机知道，一句话很短，关系之间存在互斥，所以分布稀疏，啥也不用说，先来个稀疏先验 [X | \alpha] \propto Student-t([Z|X]; \alpha)
+为什么不用 Laplace 分布，因为概率归一化其实本身具有这种稀疏，Laplace 代入是常数。
+您要是希望使用纯粹的概率框架来描述，咱们就得用其他稀疏分布，或者参考朱军老师的 MedLDA 那种怪挖抹角加 Laplace 的方式。</p>
+<p>但是，学妹没必要追求绝对的纯粹，概率框架要求目标就得是似然，我们没必要这么强迫症。
+我们只需要正常建模 [Z \in R | X \in Doc]，然后目标利用熵正则就行，目标 = 似然 + \lambda \mathcal{H}([Z|X]) 这样。
+注意，每句话都有一个熵正则项，每个熵正则项都是对 Z 的分布求的。</p>
+<p>林衍凯的文章，真的是啥也没做，把句子编码，然后来个 softmax 建模我们的 [Z | X]。
+我们在其上加上熵正则就能好用，但贡献太小，我们必须设计我们自己的 [Z | X]。</p>
+<h3>关于文本链</h3>
+<p>我们自己建模 [Z | X]，熵正则是贡献-2，这里就是贡献-1。（看最后论文的顺序）
+方法太多了，但考虑到学妹毕业，最好围绕知识图谱的路径来做（TransF、GAKE 都可以这么理顺）。
+那么，我们可以考虑这些句子之间的路径连接起来。
+比如 S1 中给了 (E1, E2), S5 中给了 (E2, E3)...，我们就把 S1, S5, S.... 串起来，进行编码。</p>
+<p>我们的动机很深刻：
+复杂事实需要多个三元组协同描述，而多个三元组分布在多个句子中；
+建模句子链，实际上，就是建模一篇人工合成的小短文，考察了更广泛的全局信息。
+毕竟，在一篇完整的文章中才更容易理解一句话。
+然后，把老师给出的第二点那个 CEO 的例子举出来，就行。</p>
+<p>怎么建模？得看数据规模，两层 LSTM，就像曾经刘彪那篇，应该会有效果（如果句子太长，信息流动会卡住），但是太费时间了，未必跑得动。
+而且，这里我们必须突出句子之间的相关性，当然可以把单纯的每个句子上的注意力，换成我今天邮件里的 Co-Attention。、
+（简单说，就是在算一个注意力的时候，把其他注意力加到输入中来。 ）
+这样，从原理上说，通过建模句子之间的关联，改善了每句话的注意力分布，取得了更好的效果。</p>
+<p>如果林衍凯真的好好做实验的话，他的结论很明显可以看出注意力机制很重要。
+我们利用句子路径，考虑“通篇“信息互相修正注意力，一定会提高，就是提高多少呗。</p>
+<h3>关于文本链构建</h3>
+<p>我们现在有个问题，那就是句子链的选择，这个是提高多少的关键，做不好就会降低。
+句子链有那么多，哪个才是最好的呢？
+嗯~我的想法很多，但最简单的就是公共字符串匹配。</p>
+<p>注意，我们的目标是构造句子链为尽可能语义完整的小故事，你的句子之间关联越紧凑越好。
+所以，首先度量句子之间的公共单词串匹配程度，然后拼接的时候，注意这一点拼接成句子链。
+拼接按照实体链，实体链很多，这一点是启发式选择。</p>
+<p>完事。</p>
+<h3>关于细节方法</h3>
+<p>架构上来讲，我们也是先神经网络编码，然后 softmax 得到分布，最大似然优化。
+相比于林衍凯的 NRE，我们的架构为：</p>
+<ul>
+<li>网络：NRE 用 CNN，我们可以是刘彪那种两层 LSTM，因为我们的动机是不同的。</li>
+<li>注意力：NRE 直接注意力，我们是 Co-Attention，因为动机不同。</li>
+<li>目标：NRE 直接最大化似然，我们还有熵正则。</li>
+</ul>
+<h2>论文写作：</h2>
+<ul>
+<li>动机：传统方法存在问题，没考虑句子之间的全局信息。</li>
+<li>观测：全局信息，可以更精确地理解每句话，（第二步的论证），（把 CEO 的那个例子举出来）。</li>
+<li>挑战：考虑全局信息时，会使得关系分布 [Z | X] “平均化” （flatten，解释一下 flatten 意义），从句子长了会引入更多噪音，模糊分布这个角度论述。但是我们已经知道关系具有互斥性，（第一步论述），（第一步例子）。</li>
+<li>贡献：所以，我们提出了 <strong>CARE</strong> (标题：Hierachical Co-Attention LSTM for Context Aware Relation Extraction).</li>
+<li>方法：我们的方法，（第二段描述），具体的挑战是（第三段论述：句子链选择），我们的解决（第三段描述）。</li>
+</ul>
+<p>贡献就是句子全局信息和熵正则先验。
+括号内容相应展开。</p>
+<p>实验如果提高了 2 个点，就挺好的。（林衍凯那篇平均就提高了 2 个点）。</p>
+<h2>实验效果预计</h2>
+<p>实验是否能提高 2 个点？不知道，你得看数据集。</p>
+<ul>
+<li>你的数据集本身话题集中，讲的事情比较能组成小故事，那就能提高。</li>
+<li>你的数据集完全就是随机的句子，那铁定会降低，你抽取了空盼的信息，那不是铁定会降低么？</li>
+</ul>
+<h2>工作计划：</h2>
+<ol>
+<li>下载林衍凯的代码，加入熵正则，熵正则不太适合林衍凯的算法，因为他归一化了（下面的求和）。但基本上也能看出提高了一点（需要调参），心里安心。</li>
+<li>开始我们的方法，不加 Co-Attetion，就是两层 LSTM 然后句子链。</li>
+<li>加入 Co-ATtention。</li>
+</ol>
+<div id="footer">
+*footer...*
+</div>
+<script>
+$.get({
+  url: "footer.html",
+  success: function( result ) {
+    $("#footer").html($($.parseXML(result)).children("html").children("body").html());
+  }
+});
+</script>
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->

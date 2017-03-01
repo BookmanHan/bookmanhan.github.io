@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>2016.03.27</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<p><script src="jquery-3.1.1.min.js"></script></p>
+<div id="header">
+*header...*
+</div>
+<script>
+$.get({
+  url: "header.html",
+  success: function( result ) {
+    $("#header").html($($.parseXML(result)).children("html").children("body").html());
+  }
+});
+</script>
+<h1>关于知识图谱迁移方法(TransX)的理论分析</h1>
+<h3>作者：肖寒</h3>
+<h2>实验结果</h2>
+<p>TransH，TransR，KG2E，基本上在所有 Trick 都用上，都比不过 TransE。
+PTransE （ADD）实际近似等价 TransE，高性能有两点：</p>
+<ol>
+<li>由于考虑的路径信息相当于平方地（立方地）提高了迭代轮数，充分收敛，效果才不错。</li>
+<li>提供了元组的置信程度，这才是超过 TransE 最有效的保证。</li>
+</ol>
+<p>TransG，实际上，特化了问题，从三元组泛化到知识库三元组泛化。
+虽然，大部分三元组形式都具有某种关系多语义，但相当于使用了问题先验。
+这问题先验是相比 TransE 的实效性所在。</p>
+<p>MainfoldE，是我觉得真正完善了 TransE 的方法。
+并不是工业型 Trick，也不是特化问题形式。
+而是真正补全了 TransE 的奇异性这一点不足。</p>
+<h2>关于现有方法的流形解释(和 ManifoldE 的关系)</h2>
+<h3>关于 TransR 的正则问题</h3>
+<p>如果使用 F 范数的话 ||M||<em>F = \lambda</em>i^2 = Tr[M^T M]， 实际上就是特征值向量的二范数。
+我们知道二范数一般会使向量各个分量均衡地惩罚，学习得到的特征值向量几乎同一水平。
+这与“在某些维度的子空间（流形空间）来进行嵌入” 这点极其不符合。
+所以，从这个范数惩罚可以看出，TransR 的 M 的特征值不会是稀疏性的。
+也就是说既不可能是只在几个少数空间内嵌入，也不大可能对各个维度进行特别强的差异性的惩罚。
+综上，TransR 不能很好地满足造流形空间这个思想，同时，依然不能有效地控制维度。</p>
+<h3>如果使用其他谱正则呢？</h3>
+<p>最好的谱正则是一范数 = |\lambda|，就单纯这个谱正则函数，我到现在也没能广泛性地写出来。
+我只能说，利用 Student-t 分布（ln.Det[E + a.M^T M]）作为先验正则，可以近似地逼近这个形式。
+但是，即便这样，TransR 的流形空间，也只不过是近似的一个低维度空间（0-奇异值的个数）。
+这种低维度流形空间的表示，不是很灵活，只能说比 TransH 有了一个进步。</p>
+<p>总之，不使用稀疏谱正则的 TransR，几乎不能有效地构造一个流形子空间。
+而使用稀疏谱正则时，TransR 也不过是一种流形思想的近似方法。所以，效果一定不明显。</p>
+<h3>TransX 和 ManifoldX 的关系</h3>
+<p>如果你细致地看看我的 MainfoldE 这篇论文，其实，Hyperplane 这个设定是真正脱离 TransE 且仍然十分有效的。
+原因就是：他的流形空间是无界的，他给了流形空间充分的自由度，这样嵌入更加的精确和有效。
+反观，TransE（0-维度），TransH （1-维度）和 稀疏谱正则-TransR （‘0-特征值个数’维度） 他们构造的近似的流形子空间，自由度十分有限，嵌入束缚仍然太多，导致效果仍然变得不好。
+如果 SSP 中不是要求靠近平面，而是要求平行语义向量，那么仍然有这个问题，效果比 TransE 还差很多。</p>
+<h2>基本泛化知识</h2>
+<p>首先，有一个很通常的认识：当简单的规则起到效果时，他一定是最好的。
+这是机器学习的一个常识，其具体的量化细节就是统计学习理论。
+我们看到 TransE 作为表示学习，他的参数数目是理论上最少的；对于三元组，他只是用了两个运算（+，=），这是模型上最简单的。
+用最简单的模型配合最简单的参数，这样的模型只有两种命运：99.99% 效果很糟糕，基本完败；0.01% 效果出奇的好，没错他接近了这个问题的“真理”。
+显然，TransE 就是后者（原因见我的第二点分析）。</p>
+<h2>泛化能力的一种观点</h2>
+<h3>基本结论</h3>
+<p>知道这一点，我们就很清楚：<strong>在 TransE 上做任何增加参数的工作，都必须万分小心，如果没有很强的第一性原则指导，那就必然是画蛇添足。</strong>
+TransH，TransR，KG2E 。。。 这些方法就是这样的嫌疑，反观，PTransE 和 ManifoldE（Sphere），他们近乎没有任何新参数，并且 TransE 是他们的一个合理特例。所以，这两种方法的高性能也就很显然。</p>
+<h3>TransE 与变种的关系</h3>
+<p>你可能说 TransE 也是 TransH，TransR 和 KG2E 的特例，但是那不“合理”。
+不合理之处在于：
+其一，PTransE 和 ManifoldE 的原则模型的运算仍然不变，都是（+, =）；而其他方法涉及投影和矩阵运算，这是致命的运算提升。
+模型复杂度提高，泛化性急剧降低。
+其二，PTransE 和 TransE 共享同一原则方程(h+r=t)，而 ManifoldE 的原则方程中只要 D_r \apporx 0 就可以近似  TransE。
+感性地说，他们在 “算子空间” 距离 TransE 很接近。而其他方法要想退化为 TransE，简直不可能，“算子空间“ 上的距离非常大。</p>
+<h2>图的可嵌入来分析性能</h2>
+<h3>图可嵌入观点</h3>
+<p>我认为任何一个有向图，TransE 都能发挥出相对很好的性能。
+因为，三元组嵌入可以看做一个图论的嵌入问题，图的可平面理论就是其中的一种。
+而我们平时用的图模型的示意（画在纸上的那种），其实就是一种平移结构（你标一下箭头就可以）。
+只要有足够的灵活度，TransE 就可以很好地拟合训练集中的元组。
+上面我们说 TransE 的泛化性很高，并不是瞎说，我可以推到泛化不等式。
+所以，高泛化性的 TransE 在训练集上拟合的好，在测试集上效果就一定不差。</p>
+<h3>性能分析</h3>
+<p>PTransE，ManifoldE 都是和 TransE 具有等量级泛化复杂度的。关键只要他们拟合的更好，性能就能更好。
+PTransE 关注了大部分样本的拟合，而放弃追求少数偏“难”样本的拟合，所以提高了训练集拟合性能。
+ManifoldE 针对 TransE 平移结构，修正为流形结构，同样极大的提高了拟合性能（看 MainfoldE 的第一个图）。</p>
+<p>你可能会说，其他方法也提高了拟合。没错，是这样。但他们一是提高的拟合程度不够。二是他们根本就不和 TransE 具有同样的泛化复杂度，所以拟合能力提升，测试集效果也于事无补。</p>
+<p>这就是我对这个问题的分析，其中详细的泛化复杂度的推到和说明都已做完，本来准备投 ICML 的，但最后假期回家比较怠惰就错过了，我准备投稿 NIPS.2016。</p>
+<h3>至于 TransG</h3>
+<p>首先，TransG 的分析和 PTransE，ManifoldE 一样，都具有类似特性。
+其次，TransE 实际上特化了三元组嵌入为知识库嵌入，这问题都不一样了。
+但实际上，更广泛意义上的三元组应该也具有关系多语义的特性，所以我对 TransG 在全问题上的表现还是很乐观的。</p>
+<h2>TransE 的其他解释</h2>
+<p>至于 TransE 是否还有其他解释。
+我理解的有不少，比如一种基于概率散度的话题模型，“嵌入”的图传播，等等很多。
+但这些都是不同的视角，可以告诉我们 TransE 的更多性质。
+真正的性能之争，我还是觉得我上述的分析很有道理。</p>
+<div id="footer">
+*footer...*
+</div>
+<script>
+$.get({
+  url: "footer.html",
+  success: function( result ) {
+    $("#footer").html($($.parseXML(result)).children("html").children("body").html());
+  }
+});
+</script>
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->

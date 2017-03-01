@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>2017.01.30</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+</head>
+<body>
+<p><script src="jquery-3.1.1.min.js"></script></p>
+<div id="header">
+*header...*
+</div>
+<script>
+$.get({
+  url: "header.html",
+  success: function( result ) {
+    $("#header").html($($.parseXML(result)).children("html").children("body").html());
+  }
+});
+</script>
+<h1>关于自动驾驶问题的难点和重点</h1>
+<h4>作者：肖寒</h4>
+<h4>链接：https://www.zhihu.com/question/50806552/answer/143468871</h4>
+<p><strong>从智能科学角度说，无人车的技术障碍是非常少的。<br />
+毕竟，机器用来做控制，从各种研究意义上都是相对容易的。</strong></p>
+<p><strong>无人车问题，从开始就是一个伦理问题，或者说政策问题。</strong></p>
+<p>首先，整天拿道德绑架来说事的人，都不了解伦理学。<br />
+道德两难问题，就和数学悖论一样，有一定的价值，但不是主要研究对象。  
+</p>
+<p>车道一边是爱恩斯坦，一边是一群小孩，控制把手在我手里，我选择撞死出这题的人。<br />
+谁家车道上整天摆爱恩斯坦，科学家怎么得罪你了，非得被道德撞死不成。<br />
+这题目就是博君一乐，没有普遍的实际意义。</p>
+<p><strong>但是，现实中，交通事故频发，是不争的事实。<br />
+一直以来，交通事故的肇事者是人，惩罚的是人；而现在肇事者是机器，你不能惩罚机器。<br />
+自动驾驶即便错误率比人低，交通肇事也是难免的，惩罚措施可怎么办？</strong></p>
+<p>“为什么不能惩罚机器？” 你这样声嘶力竭的问着。<br />
+别着急，咱们看个小例子，我给你说说到底什么是“惩罚”, 我们为什么需要“惩罚”。</p>
+<p>甲杀了乙，我们为什么要惩罚甲，杀人凭什么有罪？</p>
+<p>“如果不管杀人行为，所有人都会杀人”，那只是你的妄想。杀人同样需要勇气，需要力气，需要智谋；设想，你一天天过日子，起起伏伏都是日常，为什么别人杀人，你也要跟着杀人，你有那个本事杀人么？你反驳道：“如果我不去杀人，天下就没有人会跟着杀人么？”有呀，乙全家都想杀了甲，因为甲和乙全家的某种社会平衡，被甲的行为打破了。可是，乙全家杀了甲之后，就结束了么？不，甲全家还要杀了乙全家。之后的事情反反复复，矛盾就像火了的微博，迅速在社会上传播开来。</p>
+<p><strong>而这一切都是因为：社会的平衡被一再的打破，人与人之间的关系在不断的恶化。<br />
+这时，我们需要一种机制，一种保持人与人之间那种社会平衡的机制，这就是“惩罚”。</strong></p>
+<p>我们希望利用惩罚，来恢复在罪恶实施之前的那种人与人之间的平衡。这种“惩罚”加上杀人者的行为，平衡了被害人对凶手造成的伤害，也平衡了被害人全家对凶手的愤怒。（是的，大部分情况下，是因为被害人自身也存在错误，伤害了凶手）。只有这样，甲才能不再干扰乙全家，乙全家也心安不再对甲实施报复，这就是“公平”的期望。</p>
+<p>话说回来，甲杀了乙的父亲，我们只销毁甲的行凶工具是不够的；<strong>杀人的惩罚居然是没收刀具，这听上去就好像搞笑。同理，交通肇事，只罚款赔偿依然是于事无补。</strong>生命经历的悲痛，是不能简单用销毁作案工具来抵消的。</p>
+<p>传统意义上，无论事故发生率多高，肇事者都是人，人对人的制裁，才能得到理所应当的慰藉。而在自动驾驶中，事故不能轻易认定肇事者，被害人的悲伤不能安抚，社会会渐进失衡。</p>
+<p><strong>很多人只看到了自动驾驶的事故率可能比人工低，但没能发现，自动驾驶的事故补偿性远不如人工驾驶。</strong></p>
+<p>可能自动驾驶会鲁莽地上市出售。但不久，事故造成的失衡，就会让部分民众起来反对自动驾驶。每一次事故所造成的失衡，假如只让 10% 的人对“自动驾驶”失去信心，一个月只发生一次事故，那最多三年里，自动驾驶就会在一片骂声中，悄然下台。</p>
+<p><strong>自动驾驶真正的突破，是在伦理学和政治学意义上的。完成版本的“自动驾驶法规”，提供一种社会认可的机制，来“惩罚”肇事者，给被害人以足够的“补偿”，从而维持这个社会的平衡。这才是自动驾驶真正的难点和重点。也只有这样，自动驾驶才能得到最后的发展和胜利。</strong></p>
+<p>我说一下我个人的看法。
+这是一个很难的问题，必须得不断调研和协商才能解决。但基本上，我锁定了大尺度赔偿，这个方向。赔偿有三方：汽车公司、车内司机和保险公司；在证据充分的前提下，赔偿力度基本上每个重大案例都在两千万人民币以上两亿人民币以下（或者适度降低些），只有巨大的赔款，才能保证民众的心理平衡。钱买不来人命，钱买不来健康，但这事已经出了，就拿钱享受一下，心理平衡平衡吧。</p>
+<div id="footer">
+*footer...*
+</div>
+<script>
+$.get({
+  url: "footer.html",
+  success: function( result ) {
+    $("#footer").html($($.parseXML(result)).children("html").children("body").html());
+  }
+});
+</script>
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
